@@ -3,6 +3,7 @@
 #include <D3D11.h>
 #include <D3DX11.h>
 #include <DxErr.h>
+#include <D3Dcompiler.h>
 
 
 class Game
@@ -16,6 +17,7 @@ public:
 	virtual void UnloadContent(void);
 	virtual void Update(float gameTime);
 	virtual void Draw(float gameTime);
+	bool CompileD3DShader(char* filePath, char* entry, char* shaderModel, ID3DBlob** buffer);
 protected:
 	HINSTANCE hInstance_;
 	HWND hwnd_;

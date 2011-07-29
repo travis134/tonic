@@ -1,6 +1,6 @@
 #include<Windows.h>
 #include <memory>
-#include "BlankScreenGame.h"
+#include "DrawTriangleGame.h"
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
@@ -46,9 +46,9 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR cmdLine
 
 	ShowWindow(hwnd, cmdShow);
 
-	std::auto_ptr<BlankScreenGame> blankScreenGame(new BlankScreenGame());
+	std::auto_ptr<DrawTriangleGame> drawTriangleGame(new DrawTriangleGame());
 
-	bool result = blankScreenGame->Initialize(hInstance, hwnd);
+	bool result = drawTriangleGame->Initialize(hInstance, hwnd);
 
 	if(result == false)
 	{
@@ -66,12 +66,12 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR cmdLine
 		}
 		else
 		{
-			blankScreenGame->Update(0.0f);
-			blankScreenGame->Draw(0.0f);
+			drawTriangleGame->Update(0.0f);
+			drawTriangleGame->Draw(0.0f);
 		}
 	}
 
-	blankScreenGame->Finalize();
+	drawTriangleGame->Finalize();
 
 	return static_cast<int>(msg.wParam);
 }

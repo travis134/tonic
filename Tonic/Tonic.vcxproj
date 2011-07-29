@@ -12,12 +12,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlankScreenGame.h" />
+    <ClInclude Include="DrawTriangleGame.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlankScreenGame.cpp" />
+    <ClCompile Include="DrawTriangleGame.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SolidRedColor.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A75224C5-6C18-428B-AAEC-11FF374E533D}</ProjectGuid>
