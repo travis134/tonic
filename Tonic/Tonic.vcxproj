@@ -10,6 +10,15 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlankScreenGame.h" />
+    <ClInclude Include="Game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BlankScreenGame.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A75224C5-6C18-428B-AAEC-11FF374E533D}</ProjectGuid>
     <RootNamespace>Tonic</RootNamespace>
@@ -65,15 +74,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Hello World\Hello World\BlankScreenGame.cpp" />
-    <ClCompile Include="..\..\Hello World\Hello World\Game.cpp" />
-    <ClCompile Include="..\..\Hello World\Hello World\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Hello World\Hello World\BlankScreenGame.h" />
-    <ClInclude Include="..\..\Hello World\Hello World\Game.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
