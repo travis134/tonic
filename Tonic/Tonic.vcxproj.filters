@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{a6dd39c2-bbed-44c1-b69e-9b1073cc26da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Decals">
+      <UniqueIdentifier>{bdbaa5c0-a6ac-4f4b-9305-454686838e8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -22,6 +28,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DrawTriangleGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTextureGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,10 +47,19 @@
     <ClCompile Include="DrawTriangleGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DrawTextureGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SolidRedColor.fx">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Decal2D.fx">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="decal.dds">
+      <Filter>Resource Files\Decals</Filter>
     </None>
   </ItemGroup>
 </Project>

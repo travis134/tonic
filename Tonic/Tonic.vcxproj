@@ -12,17 +12,27 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlankScreenGame.h" />
+    <ClInclude Include="DrawTextureGame.h" />
     <ClInclude Include="DrawTriangleGame.h" />
     <ClInclude Include="Game.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlankScreenGame.cpp" />
+    <ClCompile Include="DrawTextureGame.cpp" />
     <ClCompile Include="DrawTriangleGame.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SolidRedColor.fx" />
+    <None Include="decal.dds">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Decal2D.fx">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="SolidRedColor.fx">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A75224C5-6C18-428B-AAEC-11FF374E533D}</ProjectGuid>
@@ -51,10 +61,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

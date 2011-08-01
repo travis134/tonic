@@ -1,6 +1,6 @@
 #include<Windows.h>
 #include <memory>
-#include "DrawTriangleGame.h"
+#include "DrawTextureGame.h"
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
@@ -46,9 +46,9 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR cmdLine
 
 	ShowWindow(hwnd, cmdShow);
 
-	std::auto_ptr<DrawTriangleGame> drawTriangleGame(new DrawTriangleGame());
+	std::auto_ptr<DrawTextureGame> drawTextureGame(new DrawTextureGame());
 
-	bool result = drawTriangleGame->Initialize(hInstance, hwnd);
+	bool result = drawTextureGame->Initialize(hInstance, hwnd);
 
 	if(result == false)
 	{
@@ -66,12 +66,12 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR cmdLine
 		}
 		else
 		{
-			drawTriangleGame->Update(0.0f);
-			drawTriangleGame->Draw(0.0f);
+			drawTextureGame->Update(0.0f);
+			drawTextureGame->Draw(0.0f);
 		}
 	}
 
-	drawTriangleGame->Finalize();
+	drawTextureGame->Finalize();
 
 	return static_cast<int>(msg.wParam);
 }
